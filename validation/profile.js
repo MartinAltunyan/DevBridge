@@ -17,7 +17,7 @@ module.exports = function validateProfileInput(data) {
         errors.handle = 'Handale need to be between 2 and 4 characters';
     }
     if (Validator.isEmpty(data.handle)) {
-        errors.handle = 'Profile handale is required';
+        errors.handle = 'Profile handle is required';
     }
     if (Validator.isEmpty(data.status)) {
         errors.status = 'Status field is required';
