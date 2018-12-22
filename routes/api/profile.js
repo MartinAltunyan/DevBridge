@@ -65,7 +65,6 @@ router.get('/user/:user_id', (req, res) => {
 //@desc Get all profiles
 //@access Public
 
-
 router.get('/all', (req, res) => {
     const errors = {};
 

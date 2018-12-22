@@ -8,6 +8,7 @@ import InputGroup from '../common/inputGroup';
 import SelectListGroup from '../common/SelectListGroup';
 import { createProfile, getCurrentProfile } from '../../actions/profileActions';
 import isEmpty from '../../validation/is-empty';
+import { Link } from 'react-router-dom';
 
 class CreateProfile extends Component {
 
@@ -92,7 +93,8 @@ class CreateProfile extends Component {
                 twitter: profile.twitter,
                 facebook: profile.facebook,
                 linkedin: profile.linkedin,
-                youtube: profile.youtube
+                youtube: profile.youtube,
+                instagram: profile.instagram
             });
         }
     }
@@ -204,6 +206,9 @@ class CreateProfile extends Component {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-md-8 m-auto'>
+                            <Link to="/dashboard" className="btn btn-light">
+                                Go Back
+              </Link>
                             <h1 className='display-4 text-center'>
 
                                 Edit Your Profile
